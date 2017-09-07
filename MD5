@@ -1,0 +1,14 @@
+c82ef840991ffe8d7b197d0b7f65849f *DESCRIPTION
+a56e9eadac0630e2af9a26a8e0fcd8b4 *NAMESPACE
+d11f8abf4e9df1ebbfdcd5718b6cf17b *R/cprr.R
+5032ffb8aef4cd19c8142f87aa4a89e2 *R/data.R
+1fa52bfddb5e98bcb0dd4077fd1c07f1 *README.md
+a977090597a828b7a3482e7befeeb879 *data/test_cpr.rda
+1623c01e46fe910f4de1d616c0ba0698 *man/age.Rd
+ab330ff445a199e37cecddbe741631f6 *man/dob.Rd
+c7f2408ce526741af6b7a13238ceabed *man/gender.Rd
+b8ea4ff5130423711337baf67a623eec *man/mod11.Rd
+3023f4de5b351d783067d1fb7ac8b25f *man/scramble.Rd
+310298bd63fd6007ca14c1e0078b0114 *man/test_cpr.Rd
+7e5d14a50e4798845eafe5453fce6909 *tests/testthat.R
+3973c6963b8978d205cab522edc8ca25 *tests/testthat/test_cpr.R
