@@ -1,5 +1,6 @@
 Package: cprr
-Version: 0.1.1
+Version: 0.2.0
+Date: 2019-03-17
 Type: Package
 Title: Functions for Working with Danish CPR Numbers
 Description: Calculate date of birth, age, and gender, and generate anonymous
@@ -12,10 +13,10 @@ Encoding: UTF-8
 LazyData: true
 URL: http://github.com/anhoej/cprr
 BugReports: http://github.com/anhoej/cprr/issues
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.1
 Suggests: testthat
 Depends: R (>= 3.1.0)
 NeedsCompilation: no
-Packaged: 2017-09-06 22:20:59 UTC; jacob
+Packaged: 2019-03-17 07:01:26 UTC; jacob
 Repository: CRAN
-Date/Publication: 2017-09-07 10:32:27 UTC
+Date/Publication: 2019-03-17 07:33:21 UTC

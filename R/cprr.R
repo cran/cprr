@@ -21,7 +21,7 @@ dob <- function(cpr) {
     yy <- as.numeric(substr(cpr, 5, 6))
     x7 <- as.numeric(substr(cpr, 7, 7))
 
-    if(is.na(cpr)) {
+    if(is.na(cpr) | is.na(x7)) {
       NA
     } else {
       if(x7 < 4) {
@@ -56,6 +56,7 @@ dob <- function(cpr) {
       dob  <- paste(yyyy, mm, dd, sep = '-')
       dob  <- tryCatch(as.Date(dob),
                        error = function(e) NA)
+
       if(is.na(dob)) {
         warning(paste(cpr, 'is not a valid CPR number. NA returned.'),
                 call. = FALSE)
@@ -150,7 +151,8 @@ clean <- function(cpr) {
   cpr <- gsub('[^[:alnum:]]+', '', cpr)
 
   if(any(nchar(cpr[!is.na(cpr)]) != 10)) {
-    stop('One or more invalid CPR numbers.')
+    warning('One or more CPR numbers of incorrect length replaced with NA.')
+    cpr[nchar(cpr) != 10] <- NA
   }
 
   cpr
@@ -180,8 +182,12 @@ mod11 <- function(cpr) {
   })
 
   cpr <- lapply(cpr, function(cpr) {
-    x <- c(4, 3, 2, 7, 6, 5, 4, 3, 2, 1)
-    sum(cpr * x) %% 11 == 0
+    if(length(cpr) == 10) {
+      x <- c(4, 3, 2, 7, 6, 5, 4, 3, 2, 1)
+      sum(cpr * x) %% 11 == 0
+    } else {
+      FALSE
+    }
   })
 
   unlist(cpr)

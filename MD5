@@ -1,8 +1,9 @@
-c82ef840991ffe8d7b197d0b7f65849f *DESCRIPTION
+e6efd827d14bf442aed448f8446da452 *DESCRIPTION
 a56e9eadac0630e2af9a26a8e0fcd8b4 *NAMESPACE
-d11f8abf4e9df1ebbfdcd5718b6cf17b *R/cprr.R
+13a02ce93cb5a316a71c93be6150ac2b *NEWS
+a1a2ccd463c1128efe9aac0575030134 *R/cprr.R
 5032ffb8aef4cd19c8142f87aa4a89e2 *R/data.R
-1fa52bfddb5e98bcb0dd4077fd1c07f1 *README.md
+5f57ee3d98643ea5c96fc90ea2b5c582 *README.md
 a977090597a828b7a3482e7befeeb879 *data/test_cpr.rda
 1623c01e46fe910f4de1d616c0ba0698 *man/age.Rd
 ab330ff445a199e37cecddbe741631f6 *man/dob.Rd
